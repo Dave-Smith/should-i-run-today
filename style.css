@@ -1,4 +1,23 @@
 :root {
+    --brand-color: #f7f8fa;
+    --font-color: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+.theme-blue {
+    --bg-color: #0378A6;
+    --link-color: #e310cb;
+    --link-color-hover: #ff17e4;
+    --answer-color: #F2CB05;
+    --icon-color: #D9A404;
+    --icon-color-hover: #d3bb72;
+    --brand-color: #f7f8fa;
+    --font-color: #f7f8fa;
+    --gradient-color-left: rgba(14, 0, 14, 0);
+    --gradient-color-right: rgba(134, 251, 251, 1);
+}
+.theme-dark {
     --bg-color: #171321;
     --link-color: #e310cb;
     --link-color-hover: #ff17e4;
@@ -7,9 +26,8 @@
     --icon-color-hover: #e310cb;
     --brand-color: #f7f8fa;
     --font-color: #f7f8fa;
-    --font-size: 1.3rem;
-    --mono: "Oxygen mono", monospace;
-    --sans: Oxygen, sans-serif;
+    --gradient-color-left: rgba(255, 23, 288, 1);
+    --gradient-color-right: rgba(134, 251, 251, 1);
 }
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
@@ -44,7 +62,7 @@ a:hover {
 }
 
 .gradient-bar {
-    background: linear-gradient(90deg, rgba(255, 23, 288, 1) 0%, rgba(134, 251, 251, 1) 100%);
+    background: linear-gradient(90deg, var(--gradient-color-left) 0%, var(--gradient-color-right) 100%);
     height: 2px;
 }
 
