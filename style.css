@@ -51,6 +51,7 @@ body {
 h1,
 h2,
 h3 {
+    font-family: var(--mono);
     margin: 0;
 }
 a {
@@ -68,8 +69,8 @@ a:hover {
 
 #main {
     height: 100%;
-    padding: 4rem 1rem 10rem 1rem;
-    max-width: 600px;
+    padding: 6rem 1rem 10rem 1rem;
+    max-width: 550px;
     margin: 0 auto;
     margin-bottom: -100px;
     overflow: scroll;
@@ -81,17 +82,17 @@ a:hover {
 
 #main .question {
     font-family: var(--mono);
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .question span {
     font-family: var(--sans);
-    font-size: 4rem;
+    font-size: 6rem;
     color: var(--answer-color);
     display: block;
     font-weight: 300;   
 }
 #main h2 {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 footer {
@@ -141,7 +142,7 @@ nav [class=brand] {
 
  @media (min-width: 850px) {
     #main {
-        max-width: 900px;
+        max-width: 750px;
     }
     nav {
         max-width: 1200px;
